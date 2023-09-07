@@ -1,0 +1,53 @@
+#background-image-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+  
+#background-image {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    transform: scale(1.5);
+    filter: brightness(0.5) blur(5px);
+}
+
+
+.wallpaper-control button {
+    height: fit-content;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 64px;
+    cursor: pointer;
+    font-weight: 200;
+    opacity: 0.5;
+    transition: opacity 0.1s ease-in;
+}
+
+.wallpaper-control button:hover {
+    opacity: 1;
+}
+
+.left-wallpaper-control {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.right-wallpaper-control {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+  
